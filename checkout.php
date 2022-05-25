@@ -70,7 +70,7 @@ include 'connection.php';
             Enter Card Number : <input type="text" name="cardnumber"><br>
            
             <hr class="mb-4" >
-            <button class="btn btn-primary btn-lg btn-block"  type="submit" name="submit" value="submit">Complete Checkout</button>
+            <button class="btn btn-info btn btn-secondary btn-lg"  type="submit" name="submit" value="submit">Complete Checkout</button>
           </form>
         </div>
       </div>
@@ -80,28 +80,4 @@ include 'connection.php';
   
   </div>
 
-<?php 
-   
-    if(!isset($_SESSION['submit']) )
-    try {
-    include 'connection.php';    
-    $sql="INSERT INTO orders( first_name, last_name, email, address, address2, country, zipcode, cname, cardnumber  ) VALUES(?,?,?,?,?,?,?,?,?)";
-    $sq= $db->prepare($sql);    
-    $first_name= $_POST['first_name'];
-    $last_name= $_POST['last_name'];
-    $email= $_POST['email'];
-    $address= $_POST['address'];
-    $address2= $_POST['address2'];
-    $country= $_POST['country'];
-    $zipcode= $_POST['zipcode'];
-    $cname= $_POST['cname'];
-    $cardnumber= $_POST['cardnumber'];
-    
-    if($sq->execute(array($first_name, $last_name, $email, $address, $address2, $country,  $zipcode, $cname, $cardnumber))){        
-    }
-    else echo "FAILED";
-} catch (PDOException $e) {
-    echo $e->getMessage();
-}
- 
-?>
+

@@ -50,7 +50,7 @@ include 'connection.php';
           <a href="#!">
             <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
               <div class="d-flex justify-content-start align-items-start h-100">
-                <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$83</span></h5>
+                <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">California</span></h5>
               </div>
             </div>
             <div class="hover-overlay">
@@ -62,12 +62,12 @@ include 'connection.php';
 
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
-          <img src="images/20.webp"
+          <img src="images/B.jpg"
             class="w-100" />
           <a href="#!">
             <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
               <div class="d-flex justify-content-start align-items-start h-100">
-                <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$106</span></h5>
+                <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">New York</span></h5>
               </div>
             </div>
             <div class="hover-overlay">
@@ -79,12 +79,12 @@ include 'connection.php';
 
       <div class="col-lg-4 col-md-6 mb-4">
         <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
-          <img src="images/15.jpg"
+          <img src="images/R.jpg"
             class="w-100" />
           <a href="#!">
             <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
               <div class="d-flex justify-content-start align-items-start h-100">
-                <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$58</span></h5>
+                <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">Miami</span></h5>
               </div>
             </div>
             <div class="hover-overlay">
@@ -94,9 +94,9 @@ include 'connection.php';
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="col-lg-4 col-md-6 mb-4">
+  
+  <div class ="row">
+    <div class="col-lg-4 col-md-12 mb-4">
     <div class="card " style="width: 18rem;">
       <img class="card-img-top" src="images/7.webp" alt="Card image cap">
       <div class="card-body">
@@ -106,20 +106,25 @@ include 'connection.php';
         <a href="#" class="btn btn-primary">Try it</a>
       </div>
     </div>
-</div>
+    
+  </div>
+  
+  </div>
+
+  
 </section>
 
 </body>
 
 
 
-  <div class="container-fluid bg-secondary" align="center">
+  <div class="container-fluid bg-secondary" >
   <div class="row">
     <div class="col-lg-4 col-md-6 mb-4">
     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d20294028.1264688!2d-80.83506001491112!3d34.629279744697094!
   2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89b7b7bb8f60450d%3A0x615bf297ceea39ee!2sMcDonald&#39;
   s!5e0!3m2!1sen!2smm!4v1652748664271!5m2!1sen!2smm" 
-  width="1000" height="450" style="border:20;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+  width="1500" height="450" style="border:20;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>   
   </div>
 </div>

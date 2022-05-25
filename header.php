@@ -33,25 +33,18 @@ session_start();
             <a class="nav-link" href="index.php">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Food</a>
+            <a class="nav-link" href="food.php">Food</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="">Checkout</a>
+            <a class="nav-link" href="checkout.php">Checkout</a>
           </li>
-          
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus.php">About Us</a>
+          </li>
         </ul>
         
       </div>
-      <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-         More
-        </a>
-        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="aboutus.php">About Us</a>
-          <a class="dropdown-item" href="contactus.php">Contact Us</a>
-          
-        </div>
-      </li>
+    
       
     </ul>
     <form class="form-inline my-2 my-lg-0">

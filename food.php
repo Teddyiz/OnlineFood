@@ -1,6 +1,10 @@
-<?php 
+<?php
+
 include 'header.php';
 include 'connection.php';
+//$sql=$db->prepare("SELECT * FROM food");
+//$sql->execute();
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -21,7 +25,25 @@ include 'connection.php';
 <!-- left side nav -->
     <div class="container-fluid mt-5">
       <!-- display products  -->
-      
+      <div class="row" align="">
+        <div class="col-sm-2 bg-white">
+          <nav class="navbar">
+            <div class="container-fluid">
+              <ul class="navbar-nav">
+                <li class=" btn btn-outline-dark me-2">
+                  <a class="nav-link" href="#mobile"> Burgers</a>
+                </li><br>
+                <li class="btn btn-outline-dark me-2">
+                  <a class="nav-link" href="#computer">Drinks</a>
+                </li><br>
+                <li class="btn btn-outline-dark me-2">
+                  <a class="nav-link" href="#electronic">Combo Meal</a>
+                </li>
+
+              </ul>
+            </div>
+          </nav>
+        </div>
         
       <div class="col-sm-10 bg-white" >
         <!-- display products -->
@@ -53,7 +75,7 @@ include 'connection.php';
         <div class="row" id="computer">
 
           <?php 
-          $sql=$db->prepare("SELECT * FROM item WHERE category='Laptop' " );
+          $sql=$db->prepare("SELECT * FROM food WHERE category='Laptop' " );
           $sql->execute();
           while($row=$sql->fetch(PDO::FETCH_ASSOC)){
             extract($row);
@@ -80,7 +102,7 @@ include 'connection.php';
         <div class="row" id="electronic">
 
           <?php 
-          $sql=$db->prepare("SELECT * FROM item WHERE category='Electronic' " );
+          $sql=$db->prepare("SELECT * FROM food WHERE category='Electronic' " );
           $sql->execute();
           while($row=$sql->fetch(PDO::FETCH_ASSOC)){
             extract($row);
@@ -107,8 +129,8 @@ include 'connection.php';
 </div>
 
 </body>
-</html>
 
+</html>
 <?php
 include 'footer.php';
 ?>
