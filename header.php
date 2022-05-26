@@ -58,7 +58,7 @@ session_start();
         		$count=count($_SESSION['cart']);
         	}
         ?>
-        <a href="mycart.php" class="btn btn-outline-info">Cart (<?php echo $count; ?>)</a>
+        <a href="cart.php" class="btn btn-outline-info">Cart (<?php echo $count; ?>)</a>
    
   </div>
 </nav>

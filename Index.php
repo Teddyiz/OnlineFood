@@ -88,7 +88,7 @@ include 'connection.php';
           <a href="#!">
             <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
               <div class="d-flex justify-content-start align-items-start h-100">
-                <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$123</span></h5>
+                <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$3.99</span></h5>
               </div>
             </div>
             <div class="hover-overlay">
@@ -187,14 +187,9 @@ include 'connection.php';
     </div>
   </div>
 
- 
-
-
 
 </section>
 
-
-  
 
 </body>
 

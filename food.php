@@ -31,14 +31,18 @@ include 'connection.php';
             <div class="container-fluid">
               <ul class="navbar-nav">
                 <li class=" btn btn-outline-dark me-2">
-                  <a class="nav-link" href="#mobile"> Burgers</a>
+                  <a class="nav-link" href="#Burger"> Burgers</a>
                 </li><br>
                 <li class="btn btn-outline-dark me-2">
-                  <a class="nav-link" href="#computer">Drinks</a>
+                  <a class="nav-link" href="#Beverages">Beverages</a>
                 </li><br>
                 <li class="btn btn-outline-dark me-2">
-                  <a class="nav-link" href="#electronic">Combo Meal</a>
+                  <a class="nav-link" href="#Combo Meal">Combo Meal</a>
+                </li><br>
+                <li class="btn btn-outline-dark me-2">
+                  <a class="nav-link" href="#Desserts">Desserts</a>
                 </li>
+               
 
               </ul>
             </div>
@@ -50,7 +54,7 @@ include 'connection.php';
         <div class="row" id="mobile">
 
           <?php 
-          $sql=$db->prepare("SELECT * FROM item WHERE category='Mobile Phone' " );
+          $sql=$db->prepare("SELECT * FROM food WHERE category='Burger' " );
           $sql->execute();
           while($row=$sql->fetch(PDO::FETCH_ASSOC)){
             extract($row);
@@ -59,9 +63,9 @@ include 'connection.php';
 
             <div class="col-sm-4" align="center">
               <form method="post" action="manage_cart.php">
-              <img src="images/<?php echo $photo; ?>" width="100" height="100"><br>
-              Product Name : <?php echo $name; ?><br>
-              Price : <?php echo $price; ?> MMks<br> 
+              <img src="images/<?php echo $photo; ?>" width="200" height="200"><br>
+              Name : <?php echo $name; ?><br>
+              Price : $<?php echo $price; ?> <br> 
               
               <input type="hidden" name="name" value="<?php echo $name; ?>">
               <input type="hidden" name="price" value="<?php echo $price; ?>">
@@ -75,7 +79,7 @@ include 'connection.php';
         <div class="row" id="computer">
 
           <?php 
-          $sql=$db->prepare("SELECT * FROM food WHERE category='Laptop' " );
+          $sql=$db->prepare("SELECT * FROM food WHERE category='Beverages' " );
           $sql->execute();
           while($row=$sql->fetch(PDO::FETCH_ASSOC)){
             extract($row);
@@ -84,9 +88,9 @@ include 'connection.php';
 
             <div class="col-sm-4" align="center">
               <form method="post" action="manage_cart.php">
-              <img src="images/<?php echo $photo; ?>" width="100" height="100"><br>
-              Product Name : <?php echo $name; ?><br>
-              Price : <?php echo $price; ?> MMks<br> 
+              <img src="images/<?php echo $photo; ?>" width="200" height="200"><br>
+               Name : <?php echo $name; ?><br>
+              Price : $<?php echo $price; ?><br> 
               
               <input type="hidden" name="name" value="<?php echo $name; ?>">
               <input type="hidden" name="price" value="<?php echo $price; ?>">
@@ -102,7 +106,7 @@ include 'connection.php';
         <div class="row" id="electronic">
 
           <?php 
-          $sql=$db->prepare("SELECT * FROM food WHERE category='Electronic' " );
+          $sql=$db->prepare("SELECT * FROM food WHERE category='Combo Meal' " );
           $sql->execute();
           while($row=$sql->fetch(PDO::FETCH_ASSOC)){
             extract($row);
@@ -111,9 +115,9 @@ include 'connection.php';
 
             <div class="col-sm-4" align="center">
               <form method="post" action="manage_cart.php">
-              <img src="images/<?php echo $photo; ?>" width="100" height="100"><br>
-              Product Name : <?php echo $name; ?><br>
-              Price : <?php echo $price; ?> MMks<br> 
+              <img src="images/<?php echo $photo; ?>" width="200" height="200"><br>
+              Name : <?php echo $name; ?><br>
+              Price : $<?php echo $price; ?> <br> 
               
               <input type="hidden" name="name" value="<?php echo $name; ?>">
               <input type="hidden" name="price" value="<?php echo $price; ?>">
@@ -123,6 +127,33 @@ include 'connection.php';
             </div>
           <?php } ?>
         </div>
+
+         <!-- display products -->
+         <div class="row" id="computer">
+
+            <?php 
+            $sql=$db->prepare("SELECT * FROM food WHERE category='Desserts' " );
+            $sql->execute();
+            while($row=$sql->fetch(PDO::FETCH_ASSOC)){
+              extract($row);
+
+              ?>
+
+              <div class="col-sm-4" align="center">
+                <form method="post" action="manage_cart.php">
+                <img src="images/<?php echo $photo; ?>" width="200" height="200"><br>
+                Name : <?php echo $name; ?><br>
+                Price : $<?php echo $price; ?><br> 
+                
+                <input type="hidden" name="name" value="<?php echo $name; ?>">
+                <input type="hidden" name="price" value="<?php echo $price; ?>">
+                <button type="submit" class="btn btn-outline-primary" name="buy">Add To Cart</button>
+                <br><br> <bR>
+              </form>
+              </div>
+            <?php } ?>
+            </div>
+
       </div>
     </div>
     
