@@ -34,11 +34,11 @@ include 'connection.php';
     <!-- The slideshow/carousel -->
     <div class="carousel-inner">
       <div class="carousel-item active">
-        <img src="images/11.png" alt="Los Angeles" class="d-block" style="width:100%">
+        <img src="images/lg1.jpg" alt="Los Angeles" class="d-block" style="width:100%">
         <div class="carousel-caption">
-          <h3>Combo Meal</h3>
-          <p>Big Mac® Combo Meal</p>
-          <li class=" btn btn-outline-dark me-2">
+          <h3 style="color:blue;">Burgers</h3>
+          <p style="color:blue;">Big Mac®</p>
+          <li class=" btn btn-outline-info me-2">
                   <a class="nav-link" href="food.php"> Order Now</a>
                 </li>
         </div>
@@ -80,113 +80,43 @@ include 'connection.php';
   <div class="container py-5">
     <h4 class="text-center mb-5"><strong>Menu</strong></h4>
 
-    <div class="row">
-      <div class="col-lg-4 col-md-12 mb-4">
-        <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
-          <img src="images/14.jpg"
-            class="w-100" />
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-              <div class="d-flex justify-content-start align-items-start h-100">
-                <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$3.99</span></h5>
-              </div>
-            </div>
-            <div class="hover-overlay">
-              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
-          <img src="images/15.jpg"
-            class="w-100" />
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-              <div class="d-flex justify-content-start align-items-start h-100">
-                <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$239</span></h5>
-              </div>
-            </div>
-            <div class="hover-overlay">
-              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
-          <img src="images/14.jpg"
-            class="w-100" />
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-              <div class="d-flex justify-content-start align-items-start h-100">
-                <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$147</span></h5>
-              </div>
-            </div>
-            <div class="hover-overlay">
-              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-            </div>
-          </a>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-lg-4 col-md-12 mb-4">
-        <div class="bg-image hover-zoom ripple shadow-1-strong rounded ripple-surface">
-          <img src="images/15.jpg"
-            class="w-100" />
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-              <div class="d-flex justify-content-start align-items-start h-100">
-                <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$83</span></h5>
-              </div>
-            </div>
-            <div class="hover-overlay">
-              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
-          <img src="images/14.jpg"
-            class="w-100" />
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-              <div class="d-flex justify-content-start align-items-start h-100">
-                <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$106</span></h5>
-              </div>
-            </div>
-            <div class="hover-overlay">
-              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-lg-4 col-md-6 mb-4">
-        <div class="bg-image hover-zoom ripple shadow-1-strong rounded">
-          <img src="images/15.jpg"
-            class="w-100" />
-          <a href="#!">
-            <div class="mask" style="background-color: rgba(0, 0, 0, 0.3);">
-              <div class="d-flex justify-content-start align-items-start h-100">
-                <h5><span class="badge bg-light pt-2 ms-3 mt-3 text-dark">$58</span></h5>
-              </div>
-            </div>
-            <div class="hover-overlay">
-              <div class="mask" style="background-color: rgba(253, 253, 253, 0.15);"></div>
-            </div>
-          </a>
-        </div>
-      </div>
+    <div class="card-deck">
+  <div class="card">
+    <img class="card-img-top" src="images/combo1.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Big Mac® Combo Meal</h5>
+      <p class="card-text">The one and only McDonald’s Big Mac® Combo Meal. Big Mac Ingredients include a classic sesame hamburger bun, Big Mac Sauce, American cheese and sliced pickles.</p>
+      
     </div>
   </div>
+  <div class="card">
+    <img class="card-img-top" src="images/combo2.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">Cheeseburger Combo Meal</h5>
+      <p class="card-text">Double Quarter Pounder®* with Cheese, Dr Pepper® (Medium), World Famous Fries® (Medium)</p>
+    
+    </div>
+  </div>
+  <div class="card">
+    <img class="card-img-top" src="images/combo3.jpg" alt="Card image cap">
+    <div class="card-body">
+      <h5 class="card-title">10 piece Chicken McNuggets® Meal</h5>
+      <p class="card-text">10 piece Chicken McNuggets® Combo Meal features 10 tender and delicious Chicken McNuggets® made with all white meat chicken—plus our World Famous Fries® and your choice of a Medium McDonald’s drink.</p>
+   
+    </div>
+  </div>
+</div><br>
 
+
+<div class="card mb-3">
+  <img class="card-img-top" src="images/11.png" alt="Card image cap">
+  <div class="card-body">
+    <h5 class="card-title">Exclusive McDonald's Deals</h5>
+    <p class="card-text">Enjoy free medium Fries with any $1 minimum Mobile Order & Pay purchase, only in the app.* After all—without free Fries, Fridays are just another day.</p>
+    
+  </div>
+</div>
+</div>
 
 </section>
 

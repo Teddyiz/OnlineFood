@@ -63,7 +63,7 @@ include 'header.php';
 			<div class="col-lg-3">
 				<div class="border bg-light rounded text-center p-4">
 					<h4 >Total</h4>
-					<h5 ><?php echo $total ; ?>Ks</h5>
+					<h5 >$<?php echo $total ; ?></h5>
 					<form>
 						<a href="checkout.php" class="btn btn-outline-success btn-block">CHECKOUT</a>
 					</form>

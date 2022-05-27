@@ -30,16 +30,16 @@ include 'connection.php';
           <nav class="navbar">
             <div class="container-fluid">
               <ul class="navbar-nav">
-                <li class=" btn btn-outline-dark me-2">
+                <li class=" btn btn-outline-danger me-2">
                   <a class="nav-link" href="#Burger"> Burgers</a>
                 </li><br>
-                <li class="btn btn-outline-dark me-2">
+                <li class="btn btn-outline-danger me-2">
                   <a class="nav-link" href="#Beverages">Beverages</a>
                 </li><br>
-                <li class="btn btn-outline-dark me-2">
+                <li class="btn btn-outline-danger me-2">
                   <a class="nav-link" href="#Combo Meal">Combo Meal</a>
                 </li><br>
-                <li class="btn btn-outline-dark me-2">
+                <li class="btn btn-outline-danger me-2">
                   <a class="nav-link" href="#Desserts">Desserts</a>
                 </li>
                

@@ -95,24 +95,13 @@ include 'connection.php';
       </div>
     </div>
   
-  <div class ="row">
-    <div class="col-lg-4 col-md-12 mb-4">
-    <div class="card " style="width: 18rem;">
-      <img class="card-img-top" src="images/7.webp" alt="Card image cap">
-      <div class="card-body">
-        <h5 class="card-title">
-          Order McDelivery® Now*</h5>
-        <p class="card-text">Get all your McDonald’s favorites delivered right to your doorstep with McDelivery® on Uber Eats or DoorDash.</p>
-        <a href="#" class="btn btn-primary">Try it</a>
-      </div>
-    </div>
-    
-  </div>
+    <div class="card text-center">
   
   </div>
 
   
 </section>
+
 
 </body>
 
