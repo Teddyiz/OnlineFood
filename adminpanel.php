@@ -1,5 +1,5 @@
 <?php
-include 'header.php';
+include 'header1.php';
 include 'connection.php';
 $sql=$db->prepare("SELECT * FROM food");
 $sql->execute();

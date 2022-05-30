@@ -1,9 +1,10 @@
 <?php
-include 'header.php';
+include 'header1.php';
 include "connection.php";
 $sql = $db->prepare("SELECT * FROM food");
 $sql->execute();
 ?>
+           
 <table class="table table-striped" align="center">
     <thead>
     <th scope="col">Name</th>
