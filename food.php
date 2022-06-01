@@ -51,7 +51,7 @@ include 'connection.php';
         
       <div class="col-sm-10 bg-white" >
         <!-- display products -->
-        <div class="row" id="mobile">
+        <div class="row" id="Burger">
 
           <?php 
           $sql=$db->prepare("SELECT * FROM food WHERE category='Burger' " );
@@ -76,7 +76,7 @@ include 'connection.php';
           <?php } ?>
         </div>
         <!-- display products -->
-        <div class="row" id="computer">
+        <div class="row" id="Beverages">
 
           <?php 
           $sql=$db->prepare("SELECT * FROM food WHERE category='Beverages' " );
@@ -103,7 +103,7 @@ include 'connection.php';
       
     
         <!-- display products -->
-        <div class="row" id="electronic">
+        <div class="row" id="Combo Meal">
 
           <?php 
           $sql=$db->prepare("SELECT * FROM food WHERE category='Combo Meal' " );
@@ -129,7 +129,7 @@ include 'connection.php';
         </div>
 
          <!-- display products -->
-         <div class="row" id="computer">
+         <div class="row" id="Desserts">
 
             <?php 
             $sql=$db->prepare("SELECT * FROM food WHERE category='Desserts' " );

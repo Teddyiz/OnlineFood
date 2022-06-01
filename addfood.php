@@ -8,20 +8,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://www.phptutorial.net/app/css/style.css">
     
+    
 </head>
-<center>
-   <body>
-        <form method="post" action="" enctype="multipart/form-data">
-            Enter item Name : <input type="text" name="name"><br>
-            Enter Category : <input type="text" name="category"><br>
-            Enter Price : <input type="text" name="price"><br>
-            Upload Photo HERE : <input type="file" name="image"> <br>
+
+   <body >
+   <form  method="post" action="" enctype="multipart/form-data" style=" width: 50vw; margin-left : 25vw;">
+   <h1>Add New Menu</h1>
+        <div>
+            <label for="name"> Enter item Name :</label>
+            <input type="text" name="name">
+        </div>
+        <div>
+            <label for="category"> Enter Category :</label>
+            <input type="text" name="category">
+        </div>
+        <div>
+            <label for="price"> Enter Price :</label>
+            <input type="text" name="price">
+        </div>
+        <div>
+        Upload Photo HERE : <input type="file" name="image"> <br>
             <button type="submit"  name="submit">SUBMIT</button></a>
             <a href="adminpanel.php">View Items</a>
-        </form>
-        
+        </div>
+    </form>
+
     </body>
-    </center>
+
 </html>
 <?php 
 if(isset($_FILES['image'])){

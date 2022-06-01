@@ -45,7 +45,7 @@ include 'header.php';
 								  echo "<tr>
 										      <td>$key</td>
 										      <td>$value[name]</td>
-										      <td>$value[price]Ks</td>
+										      <td>$$value[price]</td>
 										      <form action='manage_cart.php' method='post'>
                             <td><input type='number' min='1' max='10' value='$value[Quantity]' name='updatequan'></td>
                             <td><button class='btn btn-sm  btn-outline-dark' name='update' style='margin-top: -1px;'>UPDATE</button></td>

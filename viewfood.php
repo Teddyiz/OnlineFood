@@ -5,7 +5,7 @@ $sql = $db->prepare("SELECT * FROM food");
 $sql->execute();
 ?>
            
-<table class="table table-striped" align="center">
+<table class="table .thead-dark " >
     <thead>
     <th scope="col">Name</th>
     <th scope="col">Category</th>

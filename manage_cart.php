@@ -11,7 +11,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST")
             {
                 echo "<script>
                     alert('Item already added');
-                    window.location.href='viewproducts.php';
+                    window.location.href='food.php';
                 </script>";
             }
             else{
@@ -20,7 +20,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST")
 
             echo "<script>
                     alert('Item added');
-                    window.location.href='viewproducts.php';
+                    window.location.href='food.php';
                 </script>";
                 
             }
@@ -30,7 +30,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST")
             $_SESSION['cart'][0]= array('name'=>$_POST['name'],'price'=>$_POST['price'],'Quantity'=>1);
             echo "<script>
                     alert('Item added');
-                    window.location.href='viewproducts.php';
+                    window.location.href='food.php';
                 </script>";
         }
     }   
@@ -45,7 +45,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST")
                 $_SESSION['cart']=array_values($_SESSION['cart']);
                 echo "<script>
                     alert('Item Removed');
-                    window.location.href='mycart.php';
+                    window.location.href='cart.php';
                 </script>";
             }
         }
