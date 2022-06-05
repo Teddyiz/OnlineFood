@@ -50,6 +50,7 @@ include 'connection.php';
         </div>
         
       <div class="col-sm-10 bg-white" >
+      <h1 align="center">MENU</h1>
         <!-- display products -->
         <div class="row" id="Burger">
 

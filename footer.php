@@ -1,5 +1,6 @@
 
-
+<meta name='viewport' content='width=device-width, initial-scale=1'>
+<script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
 <!-- Remove the container if you want to extend the Footer to full width. -->
 <div class="">
 
@@ -32,14 +33,14 @@
 
           <ul class="fa-ul" style="margin-left: 1.65em;">
             <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-home"></i></span><span class="ms-2">New York, NY 10012, US</span>
+              <span class="fa-li"><i class='far fa-building' style='font-size:24px'></i></span><span class="ms-2">New York, NY 10012, US</span>
             </li>
             
             <li class="mb-3">
               <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 88</span>
             </li>
             <li class="mb-3">
-              <span class="fa-li"><i class="fas fa-print"></i></span><span class="ms-2">+ 01 234 567 89</span>
+              <span class="fa-li"><i class="fas fa-phone"></i></span><span class="ms-2">+ 01 234 567 89</span>
             </li>
           </ul>
         </div>
@@ -51,17 +52,15 @@
             Useful links
           </h6>
           <p>
-            <a href="#!" class="text-reset">Food</a>
+            <a href="food.php" class="text-reset">Food</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">Checkout</a>
+            <a href="checkout.php" class="text-reset">Checkout</a>
           </p>
           <p>
-            <a href="#!" class="text-reset">About Us</a>
+            <a href="aboutus.php" class="text-reset">About Us</a>
           </p>
-          <p>
-            <a href="#!" class="text-reset">Contact Us</a>
-          </p>
+          
         </div>
         <!--Grid column-->
       </div>

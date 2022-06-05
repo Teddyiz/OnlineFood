@@ -3,7 +3,7 @@ include 'header1.php';
 include 'connection.php';
 $eid = $_GET['eid'];
 
-$sql=$db->prepare("SELECT * FROM food WHERE IID='$eid'");
+$sql=$db->prepare("SELECT * FROM food WHERE id='$eid'");
 $sql->execute();
 
 $row=$sql->fetch(PDO::FETCH_ASSOC);
@@ -15,7 +15,7 @@ $rephoto = "images/".$photo;
 	
 		<link rel="stylesheet" href="https://www.phptutorial.net/app/css/style.css">
 		<form method="post" action="editprocess.php" enctype="multipart/form-data" >
-			<input type="hidden" name="id" value="<?php echo $IID; ?>">
+			<input type="hidden" name="id" value="<?php echo $id; ?>">
 		
 			Item Name  <input type="text"  name="name" value="<?php echo $name; ?>"><br>
 			

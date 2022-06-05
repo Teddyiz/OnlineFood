@@ -10,24 +10,29 @@
     
     
 </head>
-
+<style>
+body {
+  background-image: url('images/bg.jpg');
+}
+</style>
    <body >
-   <form  method="post" action="" enctype="multipart/form-data" style=" width: 50vw; margin-left : 25vw;">
-   <h1>Add New Menu</h1>
+       
+   <form  method="post" action="" enctype="multipart/form-data" style=" width: 50vw; margin-left : 25vw;" >
+   <h1><b>Add New Menu</b></h1>
         <div>
-            <label for="name"> Enter item Name :</label>
+            <label for="name"><b> Enter item Name :</b></label>
             <input type="text" name="name">
         </div>
         <div>
-            <label for="category"> Enter Category :</label>
+            <label for="category"> <b>Enter Category :</b></label>
             <input type="text" name="category">
         </div>
         <div>
-            <label for="price"> Enter Price :</label>
+            <label for="price"><b> Enter Price :</b></label>
             <input type="text" name="price">
         </div>
         <div>
-        Upload Photo HERE : <input type="file" name="image"> <br>
+        <b>Upload Photo HERE : </b><input type="file" name="image"> <br>
             <button type="submit"  name="submit">SUBMIT</button></a>
             <a href="adminpanel.php">View Items</a>
         </div>

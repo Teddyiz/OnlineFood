@@ -15,8 +15,8 @@ else{
     $updatephoto = $oldimage;
 }
 
-$sql=$db->prepare("UPDATE food SET IID='$id', name='$name',
- category='$category', price='$price', photo='$updatephoto' WHERE IID='$id'");
+$sql=$db->prepare("UPDATE food SET id='$id', name='$name',
+ category='$category', price='$price', photo='$updatephoto' WHERE id='$id'");
 $sql->execute();
-
+header('Location: viewfood.php');
 ?>

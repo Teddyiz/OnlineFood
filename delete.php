@@ -2,7 +2,7 @@
 include 'connection.php';
 $did = $_GET['did'];
 
-$sql=$db->prepare("DELETE FROM food WHERE IID='$did'");
+$sql=$db->prepare("DELETE FROM food WHERE id='$did'");
 $sql->execute();
-header('Location: viewdata.php');
+header('Location: viewfood.php');
 ?>

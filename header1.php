@@ -29,6 +29,7 @@ session_start();
     <div class="navbar-nav">
       <a class="nav-item nav-link active" href="adminpanel.php">HOME<span class="sr-only">(current)</span></a>
       <a class="nav-item nav-link" href="viewfood.php">MENU SETUP</a>
+      <a class="nav-item nav-link" href="viewuser.php">USER SETUP</a>
       <a class="nav-item nav-link" href="addfood.php">ADD NEW </a>
       
     </div>
