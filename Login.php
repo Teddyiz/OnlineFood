@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="https://www.phptutorial.net/app/css/style.css">
     <title>Login</title>
 </head>
+<style>
+body {
+  background-image: url('images/lo.jpg');
+}
+</style>
 <body>
 <main>
     <form  method="post">

@@ -17,31 +17,31 @@ include 'connection.php';
                 }
             }
           ?>
-          <form class="needs-validation" method="POST">
+          <form class="needs-validation" method="POST" action="submit.php">
             <div class="row">
               <div class="col-md-6 mb-3">
                 <label for="firstName">First name</label>
-                <input type="text" class="form-control" id="firstName" name="first_name" placeholder="First Name" value="<?php echo (isset($fnameValue) && !empty($fnameValue)) ? $fnameValue:'' ?>" >
+                <input type="text" class="form-control" id="firstName" name="first_name" placeholder="First Name" value="<?php echo (isset($first_name) && !empty($first_name)) ? $first_name:'' ?>" >
               </div>
               <div class="col-md-6 mb-3">
                 <label for="lastName">Last name</label>
-                <input type="text" class="form-control" id="lastName" name="last_name" placeholder="Last Name" value="<?php echo (isset($lnameValue) && !empty($lnameValue)) ? $lnameValue:'' ?>" >
+                <input type="text" class="form-control" id="lastName" name="last_name" placeholder="Last Name" value="<?php echo (isset($last_name) && !empty($last_name)) ? $last_name:'' ?>" >
               </div>
             </div>
  
             <div class="mb-3">
               <label for="email">Email</label>
-              <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" value="<?php echo (isset($emailValue) && !empty($emailValue)) ? $emailValue:'' ?>">
+              <input type="email" class="form-control" id="email" name="email" placeholder="you@example.com" value="<?php echo (isset($email) && !empty($email)) ? $email:'' ?>">
             </div>
  
             <div class="mb-3">
               <label for="address">Address</label>
-              <input type="text" class="form-control" id="address" name="address" placeholder="1234 Main St" value="<?php echo (isset($addressValue) && !empty($addressValue)) ? $addressValue:'' ?>">
+              <input type="text" class="form-control" id="address" name="address1" placeholder="1234 Main St" value="<?php echo (isset($address1) && !empty($address1)) ? $address1:'' ?>">
             </div>
 
             <div class="mb-3">
               <label for="address2">Address 2 <span class="text-muted">(Optional)</span></label>
-              <input type="text" class="form-control" id="address2" name="address2" placeholder="Apartment or suite" value="<?php echo (isset($address2Value) && !empty($address2Value)) ? $address2Value:'' ?>">
+              <input type="text" class="form-control" id="address2" name="address2" placeholder="Apartment or suite" value="<?php echo (isset($address2) && !empty($address2)) ? $address2:'' ?>">
             </div>
  
             <div class="row">
@@ -59,7 +59,7 @@ include 'connection.php';
               
               <div class="col-md-3 mb-3">
                 <label for="zip">Zip</label>
-                <input type="text" class="form-control" id="zip" name="zipcode" placeholder="" value="<?php echo (isset($zipCodeValue) && !empty($zipCodeValue)) ? $zipCodeValue:'' ?>" >
+                <input type="text" class="form-control" id="zip" name="zipcode" placeholder="" value="<?php echo (isset($zipCode) && !empty($zipCode)) ? $zipCode:'' ?>" >
               </div>
             </div>
             <hr class="mb-4">
@@ -80,4 +80,4 @@ include 'connection.php';
   
   </div>
 
-
+  

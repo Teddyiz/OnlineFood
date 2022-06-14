@@ -6,6 +6,11 @@
     <link rel="stylesheet" href="https://www.phptutorial.net/app/css/style.css">
     <title>Register</title>
 </head>
+<style>
+body {
+  background-image: url('images/ft.jpg');
+}
+</style>
 <body>
 <main>
     <form action="register.php" method="post">
