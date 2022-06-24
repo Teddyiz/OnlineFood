@@ -37,18 +37,19 @@ body {
 <?php 
 include 'connection.php';
 $sql="INSERT INTO user(name,email,password) VALUES(?,?,?)";
-$sql=$db->prepare ($sql);
-
-    
+$sql=$db->prepare ($sql);   
     if (isset($_POST['submit'])) {
         $uname = $_POST['uname'];
-        $email = $_POST['email'];    
-        $pwd = $_POST['pwd'];
+        $email = $_POST['email'];  
+        $pwd =  hash('sha512', $_POST['pwd']);  
     }
-    else return FALSE;
-    
+    else return FALSE;    
     if($sql->execute(array($uname, $email,  $pwd))){
-        
+      
+        echo "<script>
+        alert('Register Successful');
+        window.location.href='Register.php';
+    </script>"; 
     }
     else echo "FAILED";
 ?>

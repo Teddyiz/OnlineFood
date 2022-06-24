@@ -10,7 +10,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST")
             if (in_array($_POST['name'], $myitems))
             {
                 echo "<script>
-                    alert('Item already added');
+                    alert('Order already added');
                     window.location.href='food.php';
                 </script>";
             }
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST")
             $_SESSION['cart'][$count]= array('name'=>$_POST['name'],'price'=>$_POST['price'],'Quantity'=>1);
 
             echo "<script>
-                    alert('Item added');
+                    alert('Order added');
                     window.location.href='food.php';
                 </script>";
                 
@@ -29,7 +29,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST")
         {
             $_SESSION['cart'][0]= array('name'=>$_POST['name'],'price'=>$_POST['price'],'Quantity'=>1);
             echo "<script>
-                    alert('Item added');
+                    alert('Order added');
                     window.location.href='food.php';
                 </script>";
         }
@@ -44,7 +44,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST")
                 unset($_SESSION['cart'][$key]);
                 $_SESSION['cart']=array_values($_SESSION['cart']);
                 echo "<script>
-                    alert('Item Removed');
+                    alert('Order Removed');
                     window.location.href='cart.php';
                 </script>";
             }
@@ -62,10 +62,7 @@ if ($_SERVER['REQUEST_METHOD']=="POST")
     echo $value['Quantity'];
   header('location:cart.php');
         }
-        
-             
-    }
-
-
+                    
+    } 
 }
 ?>

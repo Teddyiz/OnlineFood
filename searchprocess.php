@@ -12,9 +12,9 @@ include 'connection.php';
 </head>
 <body>
     <div class="row">
-    <?php
-    $search=$_POST['search'];
-    $sql=$db->prepare("SELECT * FROM food WHERE name LIKE '%$search%'");
+        <?php
+            $search=htmlspecialchars($_POST['search']);
+            $sql=$db->prepare("SELECT * FROM food WHERE name LIKE '%$search%'");
             $sql->execute();
             while($row=$sql->fetch(PDO::FETCH_ASSOC)){
                 extract($row);
@@ -27,7 +27,7 @@ include 'connection.php';
               
               <input type="hidden" name="name" value="<?php echo $name; ?>">
               <input type="hidden" name="price" value="<?php echo $price; ?>">
-              <button type="submit" class="btn btn-outline-primary" name="buy">Add To Cart</button>
+              <button type="submit" class="btn btn-outline-primary" name="buy">Order Now</button>
               <br><br> <bR>
             </form>
             </div>

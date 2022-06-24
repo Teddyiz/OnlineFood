@@ -41,7 +41,7 @@ $sql->execute();
 
     if (isset($_POST['submit'])) {
         $email =$_POST['email'];
-        $pwd = $_POST['pwd'];
+        $pwd =  hash('sha512', $_POST['pwd']);
         while ($row=$sql->fetch(PDO::FETCH_ASSOC)) {
             extract($row);
             if($email!=$email || $pwd!=$password){

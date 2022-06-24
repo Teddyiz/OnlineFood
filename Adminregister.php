@@ -24,23 +24,26 @@
         </div>
        
         <button type="submit" name="register">Register</button>
-        <footer>Already a member? <a href="adminlogin.php">Login here</a></footer>
+        <footer>Already a member? <a href="loginadmin.php">Login here</a></footer>
     </form>
 <?php 
 include 'connection.php';
-$sql="INSERT INTO admin1(name,email,password) VALUES(?,?,?)";
+$sql="INSERT INTO admin(name,email,password) VALUES(?,?,?)";
 $sql=$db->prepare ($sql);
 
     
     if (isset($_POST['register'])) {
         $auname = $_POST['uname'];
         $aemail = $_POST['email'];    
-        $apwd = $_POST['pwd'];
+        $apwd = hash('sha256', $_POST['pwd']);
     }
     else return FALSE;
     
     if($sql->execute(array($auname, $aemail,  $apwd))){
-        
+        echo "<script>
+        alert('Register Successful');
+        window.location.href='Adminregister.php';
+    </script>"; 
     }
     else echo "FAILED";
 ?>

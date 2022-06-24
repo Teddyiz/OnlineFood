@@ -70,7 +70,7 @@ include 'connection.php';
               
               <input type="hidden" name="name" value="<?php echo $name; ?>">
               <input type="hidden" name="price" value="<?php echo $price; ?>">
-              <button type="submit" class="btn btn-outline-primary" name="buy">Add To Cart</button>
+              <button type="submit" class="btn btn-outline-primary" name="buy">Order Now</button>
               <br><br> <bR>
             </form>
             </div>
@@ -95,7 +95,7 @@ include 'connection.php';
               
               <input type="hidden" name="name" value="<?php echo $name; ?>">
               <input type="hidden" name="price" value="<?php echo $price; ?>">
-              <button type="submit" class="btn btn-outline-primary" name="buy">Add To Cart</button>
+              <button type="submit" class="btn btn-outline-primary" name="buy">Order Now</button>
               <br><br> <bR>
             </form>
             </div>
@@ -122,7 +122,7 @@ include 'connection.php';
               
               <input type="hidden" name="name" value="<?php echo $name; ?>">
               <input type="hidden" name="price" value="<?php echo $price; ?>">
-              <button type="submit" class="btn btn-outline-primary" name="buy">Add To Cart</button>
+              <button type="submit" class="btn btn-outline-primary" name="buy">Order Now</button>
               <br><br> <bR>
             </form>
             </div>
@@ -148,7 +148,7 @@ include 'connection.php';
                 
                 <input type="hidden" name="name" value="<?php echo $name; ?>">
                 <input type="hidden" name="price" value="<?php echo $price; ?>">
-                <button type="submit" class="btn btn-outline-primary" name="buy">Add To Cart</button>
+                <button type="submit" class="btn btn-outline-primary" name="buy">Order Now</button>
                 <br><br> <bR>
               </form>
               </div>
